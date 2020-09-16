@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierre WU</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#">Profil</a></li>
+            <li class="nav-item"><a href="#">Projets</a></li>
+            <li class="nav-item"><a href="#">Gallerie</a></li>
+            <li class="nav-item"><a href="#">Me contacter</a></li>
+
+        </ul>
+    </header>
+
+    <main>
+        <div style="background-color: black;">
+            <video id="show" controls autoplay>
+                <source src="/media/pwu_show.mp4" type="video/mp4">
+            </video>
+            <!-- <video id="show" autoplay src="pwu_show.mp4"></video> -->
+            
+        </div>
+
+        <div class="content" id="intro">
+            <h1>Hey !</h1>
+            <section>
+                <div class="lay">
+                    Je suis étudiant en première année de Master d'informatique.
+                    Je suis créatif et j'aime créer. La programmation est un de mes outils de création
+                </div>
+            </section>
+        </div>
+
+        <div class="content" id="education">
+            <h1 class="title">Education</h1> 
+            <article>
+                <div class="artic">
+                    <div><img class="artic-img" src="media/uspn.jpg" alt="uspn"></div>
+                    <section class="artic-txt">
+                        <h2> Université Sorbonne Paris Nord</h2>
+                        <div>Master d'informatique (1ère année), en cours</div>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut doloribus dicta explicabo recusandae laboriosam, cumque ab quas aliquam ad deleniti modi laudantium sapiente beatae quam vitae voluptates debitis sed dolorem.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="artic">
+                    <div><img class="artic-img" src="media/uspn.jpg" alt="uspn"></div>
+                    <section class="artic-txt">
+                        <h2> Université Sorbonne Paris Nord</h2>
+                        <div>Licence d'informatique, obtenu en Juillet 2020</div>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut doloribus dicta explicabo recusandae laboriosam, cumque ab quas aliquam ad deleniti modi laudantium sapiente beatae quam vitae voluptates debitis sed dolorem.
+                        </p>
+                    </section>
+                </div>
+            </article>
+            <!-- add more articles -->
+        </div>
+
+        <div class="content">
+            <h1 class="title">Compétences</h1>
+            <div class="cat" >
+                <section>
+                    <h3 class="center">Dev. Frontend</h3>
+                    <ul class="skills">
+                        <li>
+                            <span> Javascript</span> 
+                            <span class="score">4</span>
+                        </li>
+                        <li>
+                            <span> Bootstrap</span> 
+                            <span class="score">4</span>
+                        </li>
+                        <li>
+                            <span> HTML(5)</span> 
+                            <span class="score">4</span>
+                        </li>
+                        <li>
+                            <span> CSS(3)</span> 
+                            <span class="score">4</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="center">Dev. Backend</h3>
+                    <ul class="skills">
+                        <li>
+                            <span>Node.js</span> 
+                            <span class="score">4</span>
+                        </li>
+                        <li>
+                            <span>PHP</span> 
+                            <span class="score">4</span>
+                        </li>
+                        <li>
+                            <span>SQL</span> 
+                            <span class="score">4</span>
+                        </li>
+                        <li>
+                            <span>Java</span> 
+                            <span class="score">3</span>
+                        </li>
+                        <li>
+                            <span>C</span> 
+                            <span class="score">3</span>
+                        </li>
+                        <li>
+                            <span>Python</span> 
+                            <span class="score">3</span>
+                        </li>
+
+                        <li>
+                            <span>OCaml</span> 
+                            <span class="score">2</span>
+                        </li>
+                        <li>
+                            <span>Kotlin</span> 
+                            <span class="score">2</span>
+                        </li>
+                        
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="center">Autres</h3>
+                    <ul class="skills">
+                        <li>
+                            <span>Photoshop</span> 
+                            <span class="score">3</span>
+                        </li>
+                        <li>
+                            <span>After Effects</span> 
+                            <span class="score">3</span>
+                        </li> 
+                    </ul>
+                </section>
+            </div>
+            
+        </div>
+            
+        <div class="content" id="project">
+            <h1 class="title">Le plus récent projet</h1>
+            <section id="proj-area">
+                <iframe id="proj-vid" src="https://www.youtube.com/embed/56h42MI-CKg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>
+                    Ce projet réalisé 
+                </p>
+            </section>
+        </div>
+
+        <div class="content" id="montage">
+            <h1 class="title">Le plus récent montage photo</h1>
+            <section>
+                <div class="lay">J'aime faire des montages photos de choses improbables, ça donne souvent des résultats drôles et originales. Voici quelques montages réalisés :</div>
+                <div class="crea-area">
+                    <div>   
+                        <img class="crea" src="media/Gallery/3_ Tomato warrior chick.jpg" alt="Tomato">
+                        <h2 class="just">Tomato chick</h2>
+                    </div>
+                </div>
+
+                <button>Voir la Gallerie</button>
+            </section>
+        </div>
+
+            
+        
+        
+    </main>
+    <footer>
+        <ul class="nav-list">
+            <li class="nav-item">Profile</li>
+            <li class="nav-item">Gallerie</li>
+        </ul>
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
