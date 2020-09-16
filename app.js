@@ -39,4 +39,4 @@ for(let i = 0; i <score_length; i++){
         DOM_img.style.opacity = "0.4";     
         document.getElementsByClassName('score')[i].appendChild(DOM_img);
     }
-}
+} 
