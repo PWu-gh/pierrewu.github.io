@@ -243,6 +243,7 @@ footer{
 .cus-btn {
     background: #222;
     color: #eee;
+    height: 100%;
     min-width: 150px;
     border-radius: 10px;
     font-size: 2rem;
