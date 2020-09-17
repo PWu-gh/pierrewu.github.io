@@ -1,28 +1,7 @@
-function score(n){
-    for(let i = 0; i < n; i++){
-        console.log(i);
-        document.getElementById('score') = "haha";
-    }
-}
-
-function test(){
-    let score = document.getElementsByClassName('score')[0].innerHTML;
-}
 
 let scores = document.getElementsByClassName('score');
-
-// Array.from(scores).forEach((e) => {
-//     // Do stuff here
-//     console.log(e);
-// });
-
-// [...document.getElementsByClassName("score")].forEach(
-//     (element, index, array) => {
-//         console.log(element);
-//     }
-// );
-
 let score_length = scores.length; 
+
 const img_src = "./media/sq.svg";
 for(let i = 0; i <score_length; i++){
     let score = document.getElementsByClassName('score')[i].innerHTML;

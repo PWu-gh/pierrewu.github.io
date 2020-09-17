@@ -7,6 +7,11 @@
 	font-family: "Roboto";
 	src: url('/fonts/Roboto_Slab/RobotoSlab-Regular.ttf');
 }
+
+@font-face {
+	font-family: "Bloom_Gloss";
+	src: url('/fonts/gloss_and_bloom/Gloss_And_Bloom.ttf');
+}
 /* ---------------------------Layout-------------------------------------*/
 body{
     display: grid;
@@ -25,7 +30,7 @@ body{
 
 header{
     grid-area: head;
-    background-color: rgb(141, 156, 172);
+    background-color: rgb(61, 61, 61);
     position: fixed;
     width: 100%;
     height: 60px;
@@ -55,9 +60,12 @@ footer{
 }
 
 .nav-item{
-    text-decoration: none;
     margin: 0 10px;
 } 
+.deco{
+    text-decoration: none;
+    color: white;
+}
 
 /* ----------------------------Show------------------------------------*/
 
@@ -68,16 +76,19 @@ footer{
 
 /* ----------------------------------------------------------------*/
 .lay{
-    padding: 0 100px;
+    padding: 0 10%;
     max-width: 800px;
     text-align: justify;
     margin-bottom: 2em;
 }
 
-.title:before,.title:after, .title{
+.title:before,.title:after{
     content: "\00a0\00a0\00a0\00a0\00a0";/*space*/
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+}
+.title{
+    
 }
 
 .content{
@@ -181,17 +192,58 @@ footer{
     align-items: center;
     width: 100%;
     max-width: 720px;
-    height: 470px;
+    
 }
 
 #proj-vid{
     width: 100%;
-    height: 100%;    
+    height: 410px;
+    margin-bottom: 2rem;   
+    margin-top: 2rem;   
 }
 
 
 /* ---------------------bg color-------------------------------*/
 #education, #montage{
-    background-color: antiquewhite;
+    background-color: rgb(110, 74, 27);
 }
 
+/* ---------------------Button by Chance Squires-------------------------------*/
+.cus-btn {
+    background: #222;
+    color: #eee;
+    min-width: 150px;
+    border-radius: 10px;
+    font-size: 40px;
+    font-family: 'Bloom_Gloss';
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer;
+    padding: 0px 20px;
+    margin: 1rem 0;
+}
+  
+.cus-btn .circle {
+    width: 5px;
+    height: 5px;
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 1000ms;
+}
+  
+.cus-btn:hover {
+    background: rebeccapurple;
+}
+
+.cus-btn:hover .circle {
+    height: 82%;
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #eee;
+}

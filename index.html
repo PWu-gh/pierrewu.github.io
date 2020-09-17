@@ -10,17 +10,17 @@
 <body>
     <header>
         <ul class="nav-list">
-            <li class="nav-item"><a href="#">Profil</a></li>
-            <li class="nav-item"><a href="#">Projets</a></li>
-            <li class="nav-item"><a href="#">Gallerie</a></li>
-            <li class="nav-item"><a href="#">Me contacter</a></li>
+            <li class="nav-item"><a class="deco" href="#">Profil</a></li>
+            <li class="nav-item"><a class="deco" href="#">Projets</a></li>
+            <li class="nav-item"><a class="deco" href="#">Gallerie</a></li>
+            <li class="nav-item"><a class="deco" href="#">Me contacter</a></li>
 
         </ul>
     </header>
 
     <main>
         <div style="background-color: black;">
-            <video id="show" controls autoplay>
+            <video id="show" autoplay playsinline>
                 <source src="./media/pwu_show.mp4" type="video/mp4">
             </video>
             <!-- <video id="show" autoplay src="pwu_show.mp4"></video> -->
@@ -148,28 +148,53 @@
         </div>
             
         <div class="content" id="project">
-            <h1 class="title">Le plus récent projet</h1>
+            <h1 class="title">Projet récent</h1>
+            <div class="lay">
+                Ce dernier projet est un projet de site permettant de jouer à un jeu de calcul mental en multijoueur.
+            </div>
             <section id="proj-area">
-                <iframe id="proj-vid" src="https://www.youtube.com/embed/56h42MI-CKg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p>
-                    Ce projet réalisé 
-                </p>
+                <button  >Accéder au site</button>
+                <iframe id="proj-vid" src="https://www.youtube.com/embed/3lBYJQ3lHGE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
+            <div class="lay">
+                <p>
+                    Pour l'histoire, ce projet à été réalisé après une débat entre amis, au sujet du meilleur en calcul mental. Bien sûr, comme le disait Big Shaq (the one and only) : "Proove it !"
+                </p>
+                <p>
+                    Non, c'est faux... "Two plus two is four, minus one that's three, quickmafs !" furent ses paroles sacrées.
+                </p>
+            </div>
+            <div class="cus-btn">
+                <span class="noselect">Projets</span>
+                <div class="circle"></div>
+            </div>
+            
         </div>
 
         <div class="content" id="montage">
-            <h1 class="title">Le plus récent montage photo</h1>
+            <h1 class="title">Montage photo récent</h1>
             <section>
-                <div class="lay">J'aime faire des montages photos de choses improbables, ça donne souvent des résultats drôles et originales. Voici quelques montages réalisés :</div>
+                <div class="lay">J'aime faire des montages photos de choses qui n'ont pas beaucoup de liens en commun, ça donne souvent des résultats insolite et amusant.</div>
                 <div class="crea-area">
                     <div>   
                         <img class="crea" src="./media/Gallery/3_ Tomato warrior chick.jpg" alt="Tomato">
                         <h2 class="just">Tomato chick</h2>
                     </div>
                 </div>
-
-                <button>Voir la Gallerie</button>
+                <div class="lay center">
+                    <div>
+                        N'hésitez pas à aller voir mes autres créations dans la Gallerie!
+                    </div>
+                </div>
+                
+                
             </section>
+
+            <div class="cus-btn">
+                <span class="noselect">Gallerie</span>
+                <div class="circle"></div>
+            </div>
+
         </div>
 
             
