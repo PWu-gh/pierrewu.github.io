@@ -16,7 +16,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px auto 450px;  
+    grid-template-rows: 50px auto 450px;  
     grid-template-areas: 
         "head"
         "main"
@@ -30,21 +30,22 @@ body{
 
 header{
     grid-area: head;
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(22, 22, 22);
     position: fixed;
     width: 100%;
-    height: 60px;
-    
+    height: 50px;
+    opacity: 0.9;
+    z-index: 999;
 }
 
 main{
     grid-area: main;
-    background-color: rgb(245, 240, 233);
+    background-color: rgb(238, 234, 221);/*tan*/
 }
 
 footer{
     grid-area: foot;
-    background-color: slategrey;
+    background-color: rgb(0, 0, 0);
 }
 
 .nav-list{
@@ -64,14 +65,27 @@ footer{
 } 
 .deco{
     text-decoration: none;
-    color: white;
+    color: rgb(228, 228, 228);
+}
+/* ---------------------bg color-------------------------------*/
+.bg-color{
+    background-color: rgb(216, 216, 216);
 }
 
 /* ----------------------------Show------------------------------------*/
+#show-cont{
+    background-color: black;
+     /* left bot blur right*/
+    box-shadow: 0 4px 6px 0 rgb(78, 78, 78);
+    z-index: 10;
+    
+    
+}
 
 #show{
     width: 100%;
-    max-height: 600px;
+    max-height: 400px;
+    
 }
 
 /* ----------------------------------------------------------------*/
@@ -79,16 +93,19 @@ footer{
     padding: 0 10%;
     max-width: 800px;
     text-align: justify;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 
 .title:before,.title:after{
     content: "\00a0\00a0\00a0\00a0\00a0";/*space*/
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+
 }
 .title{
-    
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    display: flex;
+    text-align: center;
+   
 }
 
 .content{
@@ -97,6 +114,7 @@ footer{
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
+    padding: 1rem 0 3rem 0;
 }
 
 /* ----------------------------Articles------------------------------------*/
@@ -107,14 +125,14 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 40px;  
+    margin-bottom: 40px;
+    justify-content: center;  
 }
 
 .artic-img{
     max-width: 250px;
     width: 100%;
     border-radius: 20px;
-    margin: 0 10px;
     margin-top: 8%;
     border: 1px solid black;
 }
@@ -123,8 +141,14 @@ footer{
     max-width: 600px;
     height: 100%;
     flex: 1 1 400px;
-    margin: 0 10px; 
+    margin-left: 1rem; 
     text-align: justify;
+}
+
+.major{
+    margin-top: -1rem;
+    color: rgb(8, 50, 139);
+    font-size: large;
 }
 
 /* ---------------------Gallery-------------------------------*/
@@ -140,7 +164,6 @@ footer{
 .crea{
     max-width: 500px;
     max-height: 350px;
-    border: 2px solid brown;
     border-radius: 2%;
     min-width: 200px;
     width: 99%;
@@ -163,6 +186,15 @@ footer{
 .skills{
     width: 250px;
     margin: 1rem;
+
+}
+
+.separator{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(161, 161, 161);
 }
 
 .skills > li{
@@ -203,12 +235,8 @@ footer{
 }
 
 
-/* ---------------------bg color-------------------------------*/
-#education, #montage{
-    background-color: rgb(110, 74, 27);
-}
-
 /* ---------------------Button by Chance Squires-------------------------------*/
+/* https://codepen.io/chancesq/pen/abvjGpN */
 .cus-btn {
     background: #222;
     color: #eee;
@@ -222,7 +250,6 @@ footer{
     justify-content: center;
     cursor: pointer;
     padding: 0px 20px;
-    margin: 1rem 0;
 }
   
 .cus-btn .circle {
@@ -237,7 +264,7 @@ footer{
 }
   
 .cus-btn:hover {
-    background: rebeccapurple;
+    background: rgb(128, 128, 128);
 }
 
 .cus-btn:hover .circle {
@@ -246,4 +273,9 @@ footer{
     left: 0;
     border-radius: 0;
     border-bottom: 2px solid #eee;
+}
+
+.cus-btn > a{
+    text-decoration: none;
+    color: #eee;
 }

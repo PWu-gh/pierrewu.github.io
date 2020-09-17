@@ -19,7 +19,8 @@
     </header>
 
     <main>
-        <div style="background-color: black;">
+        <div id="show-cont">
+            <!-- doesnt autoplay if not muted -->
             <video id="show" autoplay muted>
                 <source src="./media/pwu_show.mp4" type="video/mp4">
             </video>
@@ -27,26 +28,26 @@
             
         </div>
 
-        <div class="content" id="intro">
+        <div class="content " id="intro">
             <h1>Hey !</h1>
             <section>
                 <div class="lay">
                     Je suis étudiant en première année de Master d'informatique.
-                    Je suis créatif et j'aime créer. La programmation est un de mes outils de création
+                    Je suis créatif et j'aime créer. La programmation est un de mes outils de création.
                 </div>
             </section>
         </div>
 
-        <div class="content" id="education">
+        <div class="content bg-color" id="education">
             <h1 class="title">Education</h1> 
             <article>
                 <div class="artic">
                     <div><img class="artic-img" src="./media/uspn.jpg" alt="uspn"></div>
                     <section class="artic-txt">
                         <h2> Université Sorbonne Paris Nord</h2>
-                        <div>Master d'informatique (1ère année), en cours</div>
+                        <div class="major">Master d'informatique (1ère année), en cours</div>
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut doloribus dicta explicabo recusandae laboriosam, cumque ab quas aliquam ad deleniti modi laudantium sapiente beatae quam vitae voluptates debitis sed dolorem.
+                            
                         </p>
                     </section>
                 </div>
@@ -55,9 +56,9 @@
                     <div><img class="artic-img" src="./media/uspn.jpg" alt="uspn"></div>
                     <section class="artic-txt">
                         <h2> Université Sorbonne Paris Nord</h2>
-                        <div>Licence d'informatique, obtenu en Juillet 2020</div>
+                        <div class="major">Licence d'informatique, septembre 2017 - juillet 2020</div>
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut doloribus dicta explicabo recusandae laboriosam, cumque ab quas aliquam ad deleniti modi laudantium sapiente beatae quam vitae voluptates debitis sed dolorem.
+                            Durant ces trois années j'ai ..
                         </p>
                     </section>
                 </div>
@@ -87,7 +88,9 @@
                             <span> CSS(3)</span> 
                             <span class="score">4</span>
                         </li>
+                        
                     </ul>
+                    <div class="separator"></div>
                 </section>
 
                 <section>
@@ -127,7 +130,9 @@
                             <span class="score">2</span>
                         </li>
                         
+                        
                     </ul>
+                    <div class="separator"></div>
                 </section>
 
                 <section>
@@ -142,18 +147,22 @@
                             <span class="score">3</span>
                         </li> 
                     </ul>
+                    <div class="separator"></div>
                 </section>
             </div>
             
         </div>
             
-        <div class="content" id="project">
-            <h1 class="title">Projet récent</h1>
+        <div class="content bg-color" id="project">
+            <h1 class="title">Le projet le plus récent</h1>
             <div class="lay">
                 Ce dernier projet est un projet de site permettant de jouer à un jeu de calcul mental en multijoueur.
             </div>
             <section id="proj-area">
-                <button  >Accéder au site</button>
+                <div class="cus-btn">
+                    <a href="#" style="font-size: 70%;">Accéder au site</a>
+                    <div class="circle"></div>
+                </div>
                 <iframe id="proj-vid" src="https://www.youtube.com/embed/3lBYJQ3lHGE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
             <div class="lay">
@@ -165,14 +174,14 @@
                 </p>
             </div>
             <div class="cus-btn">
-                <span class="noselect">Projets</span>
+                <a href="#">Projets</a>
                 <div class="circle"></div>
             </div>
             
         </div>
 
         <div class="content" id="montage">
-            <h1 class="title">Montage photo récent</h1>
+            <h1 class="title">Le photomontage le plus récent</h1>
             <section>
                 <div class="lay">J'aime faire des montages photos de choses qui n'ont pas beaucoup de liens en commun, ça donne souvent des résultats insolite et amusant.</div>
                 <div class="crea-area">
@@ -191,7 +200,7 @@
             </section>
 
             <div class="cus-btn">
-                <span class="noselect">Gallerie</span>
+                <a href="#">Gallerie</a>
                 <div class="circle"></div>
             </div>
 
@@ -203,8 +212,8 @@
     </main>
     <footer>
         <ul class="nav-list">
-            <li class="nav-item">Profile</li>
-            <li class="nav-item">Gallerie</li>
+            <li class="nav-item"><a class="deco" href="#">Github</a></li>
+            <li class="nav-item"><a class="deco" href="#">Projets</a></li>
         </ul>
     </footer>
 
