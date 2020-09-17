@@ -1,16 +1,16 @@
 @font-face {
 	font-family: "Gabriela";
-	src: url('/fonts/Gabriela/Gabriela-Regular.ttf');
+	src: url('./fonts/Gabriela/Gabriela-Regular.ttf');
 }
 
 @font-face {
 	font-family: "Roboto";
-	src: url('/fonts/Roboto_Slab/RobotoSlab-Regular.ttf');
+	src: url('./fonts/Roboto_Slab/RobotoSlab-Regular.ttf');
 }
 
 @font-face {
 	font-family: "Bloom_Gloss";
-	src: url('/fonts/gloss_and_bloom/Gloss_And_Bloom.ttf');
+	src: url('./fonts/gloss_and_bloom/Gloss_And_Bloom.ttf');
 }
 /* ---------------------------Layout-------------------------------------*/
 body{
@@ -144,7 +144,7 @@ footer{
     max-width: 600px;
     height: 100%;
     flex: 1 1 400px;
-    margin-left: 1rem; 
+    margin:1rem; 
     text-align: justify;
 }
 
