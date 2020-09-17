@@ -1,3 +1,4 @@
+/* ---------------------------Fonts-------------------------------------*/
 @font-face {
 	font-family: "Gabriela";
 	src: url('./fonts/Gabriela/Gabriela-Regular.ttf');
@@ -170,13 +171,11 @@ footer{
     max-height: 350px;
     border-radius: 2%;
     min-width: 200px;
-    width: 99%;
+    width: 98%;
+    margin: 0 1% -1rem 1%;
+
 }
 
-.just{
-    text-align: center;
-    margin-top: 0;
-}
 
 /* --------------------- Skills -------------------------------*/
 
@@ -253,7 +252,7 @@ footer{
     align-items: center; 
     justify-content: center;
     cursor: pointer;
-    padding: 3px 20px;
+    padding: 0 20px;
 }
   
 .cus-btn .circle {
@@ -268,6 +267,7 @@ footer{
 }
   
 .cus-btn:hover {
+    transition: 2000ms;
     background: rgb(128, 128, 128);
 }
 
