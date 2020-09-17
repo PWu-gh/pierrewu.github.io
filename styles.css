@@ -254,6 +254,7 @@ footer{
     justify-content: center;
     cursor: pointer;
     padding: 5px 20px;
+    border: 10px solid red;
 }
   
 .cus-btn .circle {
