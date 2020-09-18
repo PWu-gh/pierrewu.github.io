@@ -53,6 +53,7 @@ main{
 footer{
     grid-area: foot;
     background-color: rgb(0, 0, 0);
+
 }
 
 .nav-list{
@@ -160,26 +161,6 @@ footer{
     font-size: large;
 }
 
-/* ---------------------Gallery-------------------------------*/
-
-.crea-area{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.crea{
-    max-width: 500px;
-    max-height: 350px;
-    border-radius: 2%;
-    min-width: 200px;
-    width: 98%;
-    margin: 0 1% -1rem 1%;
-
-}
-
 
 /* --------------------- Skills -------------------------------*/
 
@@ -223,6 +204,7 @@ footer{
     padding: 0px;
     border: 1px solid gray;
 }
+
 /* ---------------------project-------------------------------*/
 #proj-area{
     display: flex;
@@ -240,6 +222,25 @@ footer{
     margin: 2rem;
 }
 
+/* ---------------------Gallery-------------------------------*/
+
+.crea-area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.crea{
+    max-width: 500px;
+    max-height: 350px;
+    border-radius: 2%;
+    min-width: 200px;
+    width: 98%;
+    margin: 0 1% -1rem 1%;
+
+}
 
 /* ---------------------Button by Chance Squires-------------------------------*/
 /* https://codepen.io/chancesq/pen/abvjGpN */
