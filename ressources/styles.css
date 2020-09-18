@@ -144,7 +144,7 @@ footer{
 
 .artic-img{
     max-width: 220px;
-    max-height: 220px;
+    max-height: 220px;/*for ios*/
     height: auto;
     width: 100%;
     border-radius: 20px;
@@ -217,13 +217,14 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 720px;
+    max-width: 750px;
     
 }
 
 #proj-vid{
-    width: 99%;
-    height: 410px;
+    width: 98%;
+    height: clamp(270px,50vw ,415px);
+
     margin: 2rem;
 }
 
