@@ -32,8 +32,10 @@ body{
     
 }
 h1{
-    font-size: clamp(1.5rem, 2.5vw, 20rem); 
-    
+    font-size: clamp(1.5rem, 2.5vw, 2rem); 
+}
+h2, h3{
+    font-size: clamp(20px, 2.5vw, 1.5rem); 
 }
 
 header{
@@ -161,7 +163,7 @@ footer{
 .major{
     margin-top: -1rem;
     color: rgb(8, 50, 139);
-    font-size: large;
+    font-size: clamp(1.1rem, 2vw, 1.3rem); 
 }
 
 
