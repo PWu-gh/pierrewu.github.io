@@ -27,8 +27,8 @@ body{
         "foot";
     padding: 0;
     margin: 0;
-    font-family: Gabriela;
-    font-size: large
+    font-family: Roboto;
+    font-size: large;
     
 }
 h1{
@@ -141,6 +141,8 @@ footer{
 
 .artic-img{
     max-width: 220px;
+    max-height: 220px;
+    height: auto;
     width: 100%;
     border-radius: 20px;
     margin-top: 3%;
@@ -240,7 +242,7 @@ footer{
     width: 98%;
     margin: 0 1% -1rem 1%;
 
-}
+} 
 
 /* ---------------------Button by Chance Squires-------------------------------*/
 /* https://codepen.io/chancesq/pen/abvjGpN */
