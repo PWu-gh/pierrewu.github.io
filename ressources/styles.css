@@ -303,19 +303,19 @@ footer{
     flex-wrap: wrap;
     background-color:  rgb(228, 228, 228);
     max-width: 1400px;
-    border: 1px solid black;
+    border: clamp(5px, 1vw, 10px) double #666666;
     justify-content: space-evenly;
-    width: 90%;
+    width: 92%;
 
 }
 
 
 .showcase > article{
-    min-width: 100px;
-    min-height: 125px;
+    min-width: 200px;
+    min-height: 150px;
     max-width: 400px;
     max-height: 300px;
-    border: 2px solid black;
+    border: 8px ridge 	burlywood;
     margin: 1rem 1em 2rem 1em ;
     
 }
