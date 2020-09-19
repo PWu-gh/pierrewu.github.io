@@ -2,7 +2,7 @@
 let scores = document.getElementsByClassName('score');
 let score_length = scores.length; 
 
-const img_src = "./ressources/media/sq.svg";
+const img_src = "./ressources/display/sq.svg";
 for(let i = 0; i <score_length; i++){
     let score = document.getElementsByClassName('score')[i].innerHTML;
     document.getElementsByClassName('score')[i].innerHTML = "";

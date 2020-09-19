@@ -50,7 +50,7 @@ header{
 
 main{
     grid-area: main;
-    background-color: #FFFAF0/* tan*/
+    background-color: #FFFAF0;/* tan*/
 }
 
 footer{
@@ -294,3 +294,42 @@ footer{
     text-decoration: none;
     color: #eee;
 }
+
+/* ---------------------other pages-------------------------------*/
+
+.showcase{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:  rgb(228, 228, 228);
+    max-width: 1500px;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    
+
+}
+
+
+.showcase > article{
+    min-width: 100px;
+    min-height: 125px;
+    max-width: 400px;
+    max-height: 300px;
+    border: 2px solid black;
+    margin: 1rem 1em 2rem 1em ;
+    
+}
+
+.show-img{
+    width: 100%;
+    height: 100%;
+}
+
+.legend-img{
+    text-align: center;
+    font-size: larger;
+    font-weight: 1000;
+    
+}
+
+
