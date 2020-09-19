@@ -32,7 +32,7 @@ body{
     
 }
 h1{
-    font-size: clamp(1.5rem, 2.5vw, 2rem); 
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem); 
 }
 h2, h3{
     font-size: clamp(20px, 2.5vw, 1.5rem); 
@@ -295,18 +295,19 @@ footer{
     color: #eee;
 }
 
-/* ---------------------other pages-------------------------------*/
+/* ---------------------Gallery page-------------------------------*/
 
 .showcase{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color:  rgb(228, 228, 228);
-    max-width: 1400px;
+    background-color:  rgb(36, 36, 36);
     border: clamp(5px, 1vw, 10px) double #666666;
+    max-width: 1400px;
+    
     justify-content: space-evenly;
     width: 92%;
-
+    padding: 1em 0 20% 0;
 }
 
 
@@ -315,20 +316,22 @@ footer{
     min-height: 150px;
     max-width: 400px;
     max-height: 300px;
-    border: 8px ridge 	burlywood;
-    margin: 1rem 1em 2rem 1em ;
     
+    margin: 1rem 1em 3rem 1em ;
 }
 
 .show-img{
     width: 100%;
     height: 100%;
+    border: 8px ridge 	burlywood;
 }
 
 .legend-img{
     text-align: center;
     font-size: larger;
     font-weight: 1000;
+    margin-top: auto;
+    color: rgb(185, 173, 157);
     
 }
 
