@@ -302,10 +302,10 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     background-color:  rgb(228, 228, 228);
-    max-width: 1500px;
+    max-width: 1400px;
     border: 1px solid black;
     justify-content: space-evenly;
-    
+    width: 90%;
 
 }
 
