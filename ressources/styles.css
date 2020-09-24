@@ -32,7 +32,7 @@ body{
     
 }
 h1{
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem); 
+    font-size: clamp(1.5rem, 2.5vw, 2.2rem); 
 }
 h2, h3{
     font-size: clamp(18px, 2vw, 1.5rem); 
@@ -85,7 +85,7 @@ footer{
 
 /* ----------------------------Show------------------------------------*/
 #show-cont{
-    background-color: black;
+    background-color: rgb(87, 48, 48);
      /* left bot blur right*/
     box-shadow: 0 4px 6px 0 rgb(78, 78, 78);
     z-index: 10;
@@ -239,11 +239,12 @@ footer{
 }
 
 .crea{
-    max-width: 500px;
-    max-height: 350px;
+    max-width: 600px;
+    max-height: 500px;
     border-radius: 2%;
     min-width: 200px;
     width: 98%;
+    height: auto;
     margin: 0 1% -1rem 1%;
 
 } 
@@ -304,39 +305,36 @@ footer{
     background-color:  rgb(36, 36, 36);
     border: clamp(5px, 1vw, 10px) double #C29B6B;
     border-radius: 14px;
-    max-width: 1400px;
+    max-width: 1100px;
     justify-content: space-evenly;
-    width: 92%;
-    justify-items: center;
+    width: 96%;
     padding: 1em 0 20% 0;
+    text-align: center;
+    align-items: center;
+    
 }
 
-
 .showcase > article{
-    min-width: 200px;
-    min-height: 150px;
-    max-width: 600px;
-    max-height: 300px;
-    width: auto;
+    /* min-width: 200px;
+    min-height: 150px; */
+    max-width: 450px;
+    margin: 1rem 1em 1rem 1em ;
+    /* test */
+    width: 100%;
     height: auto;
-    margin: 1rem 1em 3rem 1em ;
-
 }
 
 .show-img{
     width: 100%;
-    height: 100%;
-    border: 8px ridge 	burlywood;
-    margin-left: -8px;
+    height: auto;
+    border: 8px ridge	burlywood;
+    margin-left: -8px;/* border pushes on right*/
+
 }
 
 .legend-img{
     text-align: center;
     font-size: larger;
     font-weight: 1000;
-    margin-top: auto;
     color: rgb(185, 173, 157);
-    
 }
-
-

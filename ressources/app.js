@@ -19,3 +19,7 @@ for(let i = 0; i <score_length; i++){
         document.getElementsByClassName('score')[i].appendChild(DOM_img);
     }
 } 
+
+function route(file){
+    window.location.href("./routes/"+file+".html");
+}
