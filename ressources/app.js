@@ -23,3 +23,11 @@ for(let i = 0; i <score_length; i++){
 function route(file){
     window.location.href("./routes/"+file+".html");
 }
+
+//document.getElementById('show').style.transition = "2s";
+// document.getElementById('show').style.opacity = 1;
+setTimeout(()=>{
+    document.getElementById('show-png').style.opacity = 0.9;
+    document.getElementById('show').style.opacity = 0;
+    
+}, 3000);
