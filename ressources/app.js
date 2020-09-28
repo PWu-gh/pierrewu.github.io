@@ -24,10 +24,11 @@ function route(file){
     window.location.href("./routes/"+file+".html");
 }
 
-//document.getElementById('show').style.transition = "2s";
-// document.getElementById('show').style.opacity = 1;
+document.getElementById('show').style.transition = "opacity 1s";
+document.getElementById('show-png').style.transition = "opacity 1s";
+
 setTimeout(()=>{
     document.getElementById('show-png').style.opacity = 0.9;
     document.getElementById('show').style.opacity = 0;
     
-}, 3000);
+}, 2000);
