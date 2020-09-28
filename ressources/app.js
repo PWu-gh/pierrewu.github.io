@@ -31,4 +31,4 @@ setTimeout(()=>{
     document.getElementById('show-png').style.opacity = 0.9;
     document.getElementById('show').style.opacity = 0;
     
-}, 2000);
+}, 2400);
