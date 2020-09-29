@@ -382,3 +382,35 @@ footer{
     font-weight: 1000;
     color: rgb(185, 173, 157);
 }
+
+/* ---------------------Projects page-------------------------------*/
+.artic-proj{
+    /* display: grid;
+    grid-template-columns: 20% 20% 1fr 20%;
+    grid-template-rows: 1fr; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: center;  
+    align-content: center;
+    border: 3px solid black;
+}
+
+.artic-proj-img{
+    max-width: 550px;
+    max-height: 370px;/*for ios*/
+    height: auto;
+    width: 95%;
+    border-radius: 10px;
+    margin: 2% 2% 2% 2%;
+    border: 1px solid rgb(92, 92, 92);
+}
+
+.artic-proj-txt{
+    max-width: 600px;
+    height: 100%;
+    flex: 1 1 400px;
+    margin: 0 1rem; 
+    text-align: justify;
+}

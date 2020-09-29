@@ -24,11 +24,21 @@ function route(file){
     window.location.href("./routes/"+file+".html");
 }
 
-document.getElementById('show').style.transition = "opacity 1s";
-document.getElementById('show-png').style.transition = "opacity 1s";
+window.addEventListener("DOMContentLoaded", (event) => {
+    console.log("DOM entièrement chargé et analysé");
+  });
 
-setTimeout(()=>{
-    document.getElementById('show-png').style.opacity = 0.9;
-    document.getElementById('show').style.opacity = 0;
-    
-}, 2400);
+
+function pwu_show(){
+    document.getElementById('show').style.transition = "opacity 1s";
+    document.getElementById('show-png').style.transition = "opacity 1s";
+
+    setTimeout(()=>{
+        document.getElementById('show-png').style.opacity = 0.9;
+        document.getElementById('show').style.opacity = 0;
+    }, 2400);
+}  
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    pwu_show();
+});
