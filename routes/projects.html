@@ -20,24 +20,100 @@
     <main>
         <div class="content">
             <h1 class="title">Projets</h1>
+
+            <h3>Trier les projets</h3>
+            <div class="sort-bar">
+                <div>
+                    <button>Inclure</button>
+                    <div class="sort-panel">
+
+                            <ul class="sort-list">
+                                <li onclick="btn_click()">
+                                    <span>CSS</span>
+                                    <span class="s_btn" ></span>  
+                                </li>
+                                <li>
+                                    <span>HTML</span>
+                                    <span class="s_btn"></span>  
+                                </li>
+                                <li>
+                                    <span>Javascript</span>
+                                    <span class="s_btn"></span>  
+                                </li>
+                                <li>
+                                    <span>NodeJS</span>
+                                    <span class="s_btn"></span>  
+                                </li>
+                                <li>
+                                    <span>PHP</span>
+                                    <span class="s_btn"></span>  
+                                </li>
+                                <li>
+                                    <span>SQL / MySQL</span>
+                                    <span class="s_btn"></span>  
+                                </li>
+
+                            </ul>
+                    </div>
+                </div>
+               
+            </div>
+
             <div class="content">
-                <h3>Trier les projets</h3>
+                <article class="artic-proj">
+                    <img class="artic-proj-img" src="../ressources/display/Projects/quickmafs.png" alt="qm">
+                    <section class="artic-proj-txt">
+                        <h2>QuickMafs</h2>
+                        <div class="lang">Javascript NodeJS HTML CSS</div>
+                        <p>
+                            <div>
+                                QuickMafs est une application Web de calcul mental multijoueur. 
+                                Le jeu à été initialement développé pour jouer avec des amis.
+                            </div>
+                            <div>
+                                Les règles sont simples: cinq nombres sont générés, puis avec des opérations de bases (+, -, x, /), 
+                                trouver le plus rapidement possible un nombre un plus grand (48 sur l'image).
+                            </div>
+                        </p>
+                        <p>
+                            <div>
+                                Lien du jeu: <a class="link" href="https://quickmafs.herokuapp.com/">https://quickmafs.herokuapp.com/</a>
+                            </div>
+                           
+                            <div>
+                                Lien Demo: <a class="link" href="https://www.youtube.com/watch?v=3lBYJQ3lHGE">https://www.youtube.com/watch?v=3lBYJQ3lHGE</a>
+                            </div> 
+                        </p>
+                    </section>
+                </article>
             </div>
             <div class="content">
-                <article>
-                    <div class="artic-proj">
-
-                        <img class="artic-proj-img" src="../ressources/display/Projects/quickmafs.png" alt="uspn">
-                        <section class="artic-proj-txt">
-                            <h2> Université Sorbonne Paris Nord</h2>
-                            <div class="major">Master d'informatique (1ère année), en cours</div>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem veniam, animi hic rerum odit iure natus assumenda exercitationem similique. Distinctio a beatae alias impedit eligendi ea consequatur ipsam reprehenderit dolorem.
-                            </p>
-                        </section>
-
-                        
-                    </div>
+                <article class="artic-proj">
+                    <img class="artic-proj-img" src="../ressources/display/Projects/locateit.png" alt="li">
+                    <section class="artic-proj-txt">
+                        <h2> LocateIt</h2>
+                        <div class="lang">Javascript PHP MySQL HTML CSS</div>
+                        <p>
+                            <div>
+                                LocateIt est une application Web où le but est de localiser un pays sur une carte intéractive.
+                            </div>
+                            <div>
+                                Des points et des indices ont été mis en place, comme à la manière de Geoguessr plus on a de points, meilleur est le score. Le score maximal est de 5000 points.
+                            </div>
+                            <div>
+                                D'autres fonctionnalité comprises: Authentification, historique, carte customisable, page de solutions et des indices.
+                            </div>
+                        </p>
+                        <p>
+                            <div>
+                                Lien du jeu: <a class="link" >Pas hébergé</a>
+                            </div>
+                           
+                            <div>
+                                Lien Demo: <a class="link" href="https://www.youtube.com/watch?v=u1RO4DPsHLE">https://www.youtube.com/watch?v=u1RO4DPsHLE</a>
+                            </div> 
+                        </p>
+                    </section>
                 </article>
             </div>
 
@@ -52,7 +128,7 @@
         </ul>
     </footer>
 
-
+    <script src="../ressources/project.js"></script>
 
 </body>
 

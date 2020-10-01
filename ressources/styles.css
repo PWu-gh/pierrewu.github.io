@@ -384,6 +384,7 @@ footer{
 }
 
 /* ---------------------Projects page-------------------------------*/
+
 .artic-proj{
     /* display: grid;
     grid-template-columns: 20% 20% 1fr 20%;
@@ -414,3 +415,56 @@ footer{
     margin: 0 1rem; 
     text-align: justify;
 }
+
+.link{
+    text-decoration: none;
+    color: rgb(85, 107, 207);
+}
+
+.lang{
+    margin-top: -1rem;
+    color: rgb(18, 130, 145);
+    font-size: clamp(1.1rem, 2vw, 1.3rem); 
+}
+
+/* ---------------------sort-bar-------------------------------*/
+
+.sort-bar{
+    background-color: rgb(181, 190, 190);
+    max-width: 1200px;
+    width: 98%;
+}
+
+.sort-panel{
+    background-color: aquamarine;
+    max-width: 280px;
+}
+
+.sort-list{
+    list-style: none;
+    margin-left: 5px;
+    padding-left:0;
+}
+.sort-list > li{
+    padding: 1rem;
+    margin-left: 0;
+    border-top: 1px solid black;
+    cursor: pointer;
+   
+}
+
+.s_btn{
+
+    float: right;
+    margin:0 2% 0 0;
+    padding: 0;
+}
+
+.s_btn img{
+    margin-top: 3px;
+    opacity: 0.5;
+    height: 25px;
+    width: auto;
+    border: 1px solid black;
+}
+
