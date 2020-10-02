@@ -450,7 +450,12 @@ footer{
     margin-left: 0;
     border-top: 1px solid black;
     cursor: pointer;
-   
+}
+
+.sort-list > li:hover{
+    margin-left: -4px;
+    padding-left: 10px;
+    background-color: #C29B6B;
 }
 
 .s_btn{

@@ -10,7 +10,39 @@ for(let i = 0; i <s_btn_length; i++){
 
 } 
 
-function btn_click(){
+function btn_click(pl){
+    insertParam("pl", pl);
     
-    console.log("cc")
+}
+
+
+function insertParam(key, value) {
+    console.log()
+    if(url_get(key) == null){
+        let n_url = window.location.href +"?"+ key + "="+ value;
+        window.history.replaceState( {} , '', n_url );
+    }
+    else{// only adapted to one parameter key
+        let n_url= window.location.href +"+"+ value;
+        window.history.replaceState( {} , '', n_url );
+        console.log(pl_tab);
+        console.log(url_get("pl"));
+    }
+    
+   
+
+}
+
+function url_get(param) {
+	var vars = {};
+	window.location.href.replace( location.hash, '' ).replace( 
+		/[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+		function( m, key, value ) { // callback
+			vars[key] = value !== undefined ? value : '';
+		}
+	);
+	if ( param ) {
+		return vars[param] ? vars[param] : null;	
+    }
+	return vars;
 }
