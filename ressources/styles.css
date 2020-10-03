@@ -319,19 +319,19 @@ footer{
 /* ---------------------scrollbar styling-------------------------------*/
 /* The emerging W3C standard
    that is currently Firefox-only */
-   * {
+   body {
     scrollbar-width: thin;
     scrollbar-color: rgb(41, 41, 41) rgb(192, 192, 192);
   }
   
   /* Works on Chrome/Edge/Safari */
-  *::-webkit-scrollbar {
+  body::-webkit-scrollbar {
     width: 12px;
   }
-  *::-webkit-scrollbar-track {
+  body::-webkit-scrollbar-track {
     background: rgb(192, 192, 192);
   }
-  *::-webkit-scrollbar-thumb {
+  body::-webkit-scrollbar-thumb {
     background-color: rgb(41, 41, 41);
     border-radius: 20px;
     border: 3px solid rgb(192, 192, 192);
@@ -436,14 +436,19 @@ footer{
 }
 
 .sort-panel{
-    background-color: aquamarine;
+    background-color:#e7e7e7;
     max-width: 280px;
+
+    
 }
 
 .sort-list{
     list-style: none;
     margin-left: 5px;
     padding-left:0;
+    max-height: 250px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 .sort-list > li{
     padding: 1rem;
@@ -455,21 +460,14 @@ footer{
 .sort-list > li:hover{
     margin-left: -4px;
     padding-left: 10px;
-    background-color: #C29B6B;
+    background-color: #c7c0b8;
 }
 
-.s_btn{
+.c_btn{
 
     float: right;
-    margin:0 2% 0 0;
+    margin:-5px 2% 0 0;
     padding: 0;
-}
-
-.s_btn img{
-    margin-top: 3px;
-    opacity: 0.5;
-    height: 25px;
+    height: 30px;
     width: auto;
-    border: 1px solid black;
 }
-
