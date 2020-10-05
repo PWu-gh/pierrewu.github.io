@@ -384,6 +384,15 @@ footer{
 }
 
 /* ---------------------Projects page-------------------------------*/
+.content-proj{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding: 0 0 0 0;
+    margin: 0;
+}
 
 .artic-proj{
     /* display: grid;
@@ -395,7 +404,7 @@ footer{
     margin-bottom: 40px;
     justify-content: center;  
     align-content: center;
-    border: 3px solid black;
+    
 }
 
 .artic-proj-img{
@@ -404,7 +413,7 @@ footer{
     height: auto;
     width: 95%;
     border-radius: 10px;
-    margin: 2% 2% 2% 2%;
+    margin: 0 2% 2% 2%;
     border: 1px solid rgb(92, 92, 92);
 }
 
@@ -427,18 +436,25 @@ footer{
     font-size: clamp(1.1rem, 2vw, 1.3rem); 
 }
 
+.separator-proj{
+    width: 60%;
+    padding-top: 10px;
+    border-bottom: 2px solid rgb(192, 192, 192);
+}
 /* ---------------------sort-bar-------------------------------*/
 
 .sort-bar{
     background-color: rgb(181, 190, 190);
     max-width: 1200px;
     width: 98%;
+    margin-bottom: 2rem;
 }
 
-.sort-panel{
+#sort-panel{
     background-color:#e7e7e7;
-    max-width: 280px;
-
+    width: 250px;
+    position: absolute;
+    visibility: hidden;
     
 }
 
@@ -458,7 +474,7 @@ footer{
 }
 
 .sort-list > li:hover{
-    margin-left: -4px;
+    margin-left: 0px;
     padding-left: 10px;
     background-color: #c7c0b8;
 }
@@ -471,3 +487,5 @@ footer{
     height: 30px;
     width: auto;
 }
+
+
