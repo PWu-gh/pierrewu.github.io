@@ -167,3 +167,10 @@ function visib_sort(){
         panel.style.visibility = "hidden";
     }
 }
+
+document.addEventListener("click", e => {
+    if(e.target.id != "sort-panel" && e.target.id != "btn_sort"){
+        let panel = document.getElementById('sort-panel');
+        panel.style.visibility = "hidden";
+    }
+})
