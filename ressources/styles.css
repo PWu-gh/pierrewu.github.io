@@ -444,10 +444,40 @@ footer{
 /* ---------------------sort-bar-------------------------------*/
 
 .sort-bar{
-    background-color: rgb(181, 190, 190);
-    max-width: 1200px;
-    width: 98%;
+    border-top: 1px solid rgb(192, 192, 192);
+    border-bottom: 1px solid rgb(192, 192, 192);
+    max-width: 1000px;
+    width: 90%;
+    padding: 10px 0 10px 0;
     margin-bottom: 2rem;
+}
+
+#sort-active{
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+
+#btn-sort{
+    width: 100px;
+    border: none;
+    border-right: 1px solid rgb(192, 192, 192);
+    background-color: e7e7e7;
+    font-size: large;
+    cursor: pointer;
+    margin-top: -5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    outline: none;
+    background-color:  #FFFAF0;
+}
+
+#sorted{
+    margin-left: 10px;
+    background-color: aqua;
+}
+
+#sorted > div{
+    max-width: 100px;
 }
 
 #sort-panel{
@@ -455,6 +485,7 @@ footer{
     width: 250px;
     position: absolute;
     visibility: hidden;
+    border: 1px solid rgb(138, 138, 138);
     
 }
 
@@ -465,11 +496,12 @@ footer{
     max-height: 250px;
     overflow: scroll;
     overflow-x: hidden;
+    margin-top: 10px;
 }
 .sort-list > li{
     padding: 1rem;
     margin-left: 0;
-    border-top: 1px solid black;
+    border-top: 1px solid rgb(148, 148, 148);
     cursor: pointer;
 }
 

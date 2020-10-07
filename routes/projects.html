@@ -24,13 +24,13 @@
             <h3>Trier les projets</h3>
             <div class="sort-bar">
                 <div>
-                    <button id="btn_sort" onclick="visib_sort()">Inclure</button>
+                    <div id="sort-active">
+                        <button id="btn-sort" onclick="visib_sort()">Trier ⇩</button>
+                        <div id="sorted"></div>
+                    </div>
+                   
                     <div id="sort-panel">
-                        <input type="text" name="" id="search_bar" placeholder="rechercher">
                             <ul class="sort-list">
-
-                                    
-
                                 <li onclick="btn_click('css')">
                                     <span>CSS</span>
                                     <img id="css" class="c_btn" src="" alt="">

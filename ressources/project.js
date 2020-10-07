@@ -160,7 +160,7 @@ function rm_from_array(element, array){
 
 function visib_sort(){
     let panel = document.getElementById('sort-panel');
-    if(panel.style.visibility == "hidden"){
+    if(panel.style.visibility == "hidden" || panel.style.visibility == ""){ // "" because set by default hidden in css
         panel.style.visibility = "visible";
     }
     else{
@@ -169,8 +169,13 @@ function visib_sort(){
 }
 
 document.addEventListener("click", e => {
-    if(e.target.id != "sort-panel" && e.target.id != "btn_sort"){
+    //e.path[2].id  = id of 3rd element of e.path (can be modified if html modified)
+    console.log(e.target.className)
+    if(!(e.path[2].id == "sort-panel" || e.target.id == "btn-sort" || e.target.className == "c_btn")){
         let panel = document.getElementById('sort-panel');
         panel.style.visibility = "hidden";
+
     }
+
+
 })
