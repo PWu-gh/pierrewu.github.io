@@ -49,7 +49,6 @@ function btn_click(pl){
     
 }
 
-
 function insertParam(key, value) {
     if(url_get(key) == null){       //...?pl=php+...
         let n_url = window.location.href +"?"+ key + "="+ value;
@@ -97,12 +96,14 @@ function checkb(lang){
     document.getElementById(lang).src = checkbox;
     checked_class.push(lang);
     sort_proj();
+    checked(lang);
 }
 
 function uncheckb(lang){
     document.getElementById(lang).src = uncheckbox;
     checked_class = rm_from_array(lang, checked_class);
     sort_proj();
+    rm_check(lang);
 }
 
 
@@ -170,12 +171,28 @@ function visib_sort(){
 
 document.addEventListener("click", e => {
     //e.path[2].id  = id of 3rd element of e.path (can be modified if html modified)
-    console.log(e.target.className)
     if(!(e.path[2].id == "sort-panel" || e.target.id == "btn-sort" || e.target.className == "c_btn")){
         let panel = document.getElementById('sort-panel');
         panel.style.visibility = "hidden";
-
     }
-
-
 })
+
+function checked(e){
+    let sorted = document.getElementById('sorted');
+    let n_div = document.createElement("div");
+    n_div.onclick =  () => {
+        rm_lang("pl",e);
+        uncheckb(e);
+    };
+    n_div.innerHTML = "× "+e;
+    sorted.appendChild(n_div);
+}
+
+function rm_check(el){
+    let sorted = document.getElementById('sorted');
+    for(let i = 0; i < sorted.childNodes.length; i++){
+        if(sorted.childNodes[i].innerHTML == ("× "+el)){
+            sorted.removeChild(sorted.childNodes[i]); 
+        }
+    }
+}
