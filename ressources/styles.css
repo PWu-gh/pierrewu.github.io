@@ -346,9 +346,9 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color:  rgb(36, 36, 36);
-    border: clamp(5px, 1vw, 10px) double #C29B6B;
-    border-radius: 14px;
+    background-color:  rgb(66, 66, 66);
+    border: clamp(5px, 1vw, 10px) ridge #C29B6B;
+    border-radius: 2px;
     max-width: 1100px;
     justify-content: space-evenly;
     width: 96%;
@@ -423,6 +423,9 @@ footer{
     flex: 1 1 400px;
     margin: 0 1rem; 
     text-align: justify;
+}
+.no-justify{
+    text-align: left;
 }
 
 .link{
@@ -530,4 +533,29 @@ footer{
 
 /* --------------------Contacts-------------------------------*/
 
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1200px;
 
+}
+
+.logo{
+    padding: 1em;
+    text-align: center;
+    margin: 6vw 0 6vw 0;
+}
+
+.logos > div > a > img{
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.logos > div > a{
+    text-decoration: none;
+    color: black;
+}
