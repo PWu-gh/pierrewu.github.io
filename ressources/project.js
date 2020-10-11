@@ -1,7 +1,7 @@
 let c_btn = document.getElementsByClassName('c_btn');
 
-const uncheckbox = "../ressources/display/uncheckbox.png";
-const checkbox = "../ressources/display/checkbox.png";
+const uncheckbox = "../ressources/display/util/uncheckbox.png";
+const checkbox = "../ressources/display/util/checkbox.png";
 
 let checked_class = [];
 

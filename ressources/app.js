@@ -2,7 +2,7 @@
 let scores = document.getElementsByClassName('score');
 let score_length = scores.length; 
 
-const img_src = "./ressources/display/sq.svg";
+const img_src = "./ressources/display/util/square.svg";
 for(let i = 0; i <score_length; i++){
     let score = document.getElementsByClassName('score')[i].innerHTML;
     document.getElementsByClassName('score')[i].innerHTML = "";
@@ -19,15 +19,6 @@ for(let i = 0; i <score_length; i++){
         document.getElementsByClassName('score')[i].appendChild(DOM_img);
     }
 } 
-
-function route(file){
-    window.location.href("./routes/"+file+".html");
-}
-
-window.addEventListener("DOMContentLoaded", (event) => {
-    console.log("DOM entièrement chargé et analysé");
-  });
-
 
 function pwu_show(){
     document.getElementById('show').style.transition = "opacity 1s";

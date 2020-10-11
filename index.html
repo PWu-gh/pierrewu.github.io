@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pierre WU</title>
-    <link rel="icon" href="./ressources/display/pwu.png">
+    <link rel="icon" href="./ressources/display/util/pw.png">
     <link rel="stylesheet" href="./ressources/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -22,10 +21,10 @@
         <div id="show-cont">
             <!-- doesnt autoplay if not muted --> 
             <div>
-                <img  id="show-png" src="./ressources/display/pwu_png.png" alt="pwu-png">
+                <img  id="show-png" src="./ressources/display/util/pwu_png.png" alt="pwu-png">
            </div>
             <video id="show" autoplay muted>
-                <source src="./ressources/display/pwu_show.mp4" type="video/mp4">
+                <source src="./ressources/display/util/pwu_show.mp4" type="video/mp4">
             </video>
 
              
@@ -46,25 +45,30 @@
             <h1 class="title">Education</h1> 
             <article>
                 <div class="artic">
-                    <img class="artic-img" src="./ressources/display/uspn.jpg" alt="uspn">
+                    <img class="artic-img" src="./ressources/display/exp/uspn.jpg" alt="uspn">
                     <section class="artic-txt">
                         <h2> Université Sorbonne Paris Nord</h2>
-                        <div class="major">Master d'informatique (1ère année), en cours</div>
+                        <div class="major">
+                            <div>Septembre 2020 - maintenant</div>
+                            <div class="maj">Master d'informatique (1ère année)</div>
+                        </div>
                         <p>
                             
                         </p>
                     </section>
                 </div>
+                
 
                 <div class="artic">
-                    <img class="artic-img" src="./ressources/display/uspn.jpg" alt="uspn">
+                    <img class="artic-img" src="./ressources/display/exp/uspn.jpg" alt="uspn">
                     <section class="artic-txt">
                         <h2> Université Sorbonne Paris Nord</h2>
-                        <div class="major">Licence d'informatique, septembre 2017 - juillet 2020</div>
-                        <p>
-                            Durant ces trois années j'ai ..
-                        </p>
+                        <div class="major">
+                            <div>Septembre 2017 - Juillet 2020</div>
+                            <div class="maj">Licence d'informatique</div>
+                        </div>
                     </section>
+
                 </div>
             </article>
             <!-- add more articles -->
@@ -163,8 +167,8 @@
                 Ce dernier projet est un site permettant de jouer à un jeu de calcul mental en multijoueur.
             </div>
             <section id="proj-area">
-                <button class="cus-btn" href="https://pwu-gh.github.io/website/">
-                    <a style="font-size: 70%;">Accéder au site</a>
+                <button class="cus-btn">
+                    <a  href="https://quickmafs.herokuapp.com/" style="font-size: 70%;">Accéder au site</a>
                     <div class="circle"></div>
                 </button>
                 <iframe id="proj-vid" src="https://www.youtube.com/embed/3lBYJQ3lHGE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -177,8 +181,14 @@
                     Non, c'est faux... "Two plus two is four, minus one that's three, quickmafs !" furent ses paroles.
                 </p>
             </div>
+
+            <div class="lay center">
+                <div>
+                    N'hésitez pas à aller voir mes autres projets !
+                </div>
+            </div>
             <div class="cus-btn">
-                <a href="#">Projets</a>
+                <a href="./routes/projects.html">Projets</a>
                 <div class="circle"></div>
             </div>
             
@@ -196,7 +206,7 @@
                 </div>
                 <div class="lay center">
                     <div>
-                        N'hésitez pas à aller voir mes autres créations dans la Galerie!
+                        N'hésitez pas à aller voir mes autres créations !
                     </div>
                 </div>
             </section>
@@ -211,8 +221,7 @@
     </main>
     <footer>
         <ul class="nav-list">
-            <li class="nav-item"><a class="deco" href="https://github.com/PWu-gh">Github</a></li>
-            <li class="nav-item"><a class="deco" href="#">Projets</a></li>
+            <li class="nav-item"><a href="./routes/contact.html" class="footer-txt" >Réalisé par Pierre Wu</a></li>
         </ul>
     </footer>
 
