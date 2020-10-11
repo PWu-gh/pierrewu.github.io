@@ -170,7 +170,6 @@ footer{
 
 .artic-img{
     height: 100%;
-    border: 1px solid rgb(161, 161, 161);
     grid-column: 2/3;
     display: flex;
     align-items: center;
@@ -180,6 +179,7 @@ footer{
 .artic-img  img{
     max-width: clamp(90px, 15vw, 150px);
     max-height: clamp(90px, 15vw, 150px);/*for ios*/
+    border: 1px solid rgb(161, 161, 161);
     height: 100%;
     width: 100%;
     border-radius: 20px;
@@ -191,12 +191,14 @@ footer{
     height: 100%;
     grid-column: 3/4;
     padding: 0 0 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: clamp(1rem, 2vw, 1.3rem); 
 }
 
-.major{
-    margin-top: -1rem;
+.dt{
     color: rgb(8, 50, 139);
-    font-size: clamp(1.1rem, 2vw, 1.3rem); 
+    
 }
 
 .maj{
