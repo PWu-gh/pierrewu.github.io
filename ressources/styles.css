@@ -31,11 +31,11 @@ body{
     font-size: clamp(1rem, 2vw, larger); 
     height: 100%;
 }
-h1{
+h1 {
     font-size: clamp(1.5rem, 2.5vw, 2.2rem);
     margin-bottom: 2rem; 
 }
-h2, h3{
+h2, h3 {
     font-size: clamp(18px, 2vw, 1.5rem); 
 }
 
@@ -50,25 +50,25 @@ header{
     z-index: 999;
 }
 
-main{
+main {
     grid-area: main;
     /* tan*/
     /* background-color: #FFFAF0; */
     background-color: #d8d8d8;
 }
 
-footer{
+footer {
     grid-area: foot;
     background-color: rgb(0, 0, 0);
 
 }
 
-.footer-txt{
+.footer-txt {
     text-decoration: none;
     color: rgb(161, 161, 161);
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     flex-direction: row;
     padding: 0;
@@ -499,6 +499,7 @@ footer{
     outline: none;
     background-color:  #FFFAF0;
     font-weight: bold;
+    border-radius: 4px;
 
 }
 
